@@ -1,0 +1,61 @@
+:root {
+  --main-color: red;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow( 3px 3px 20px rgba(255, 0, 0, .7));
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+body {
+  font-family: sans-serif;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+#animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ruby {
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow( 3px 3px 2px rgba(255, 0, 0, .7));
+  margin: 5px 0;
+}
+#me {
+  transition: all 2s;
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+#me:hover {
+  filter: drop-shadow( 3px 3px 20px rgba(0, 0, 0, .7));
+}
+ul li {
+  list-style: none;
+  vertical-align: middle;
+  /* line-height: 24px; */
+}
+ul li .material-icons {
+  font-size: 24px;
+  /* margin-bottom: -6px; */
+  vertical-align: sub;
+  margin: 4px;
+}
+footer {
+  font-size: 12px;
+  /* align-self: flex-end; */
+}
