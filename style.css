@@ -2,6 +2,17 @@
   --main-color: red;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0%;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 100%;
+    transform: translatey(0px);
+  }
+}
+
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -16,6 +27,7 @@
 }
 
 body {
+  animation: 2s ease-in appear;
   background-image: linear-gradient(to right, rgba(255, 255, 255, .6) 0%, rgba(255, 255, 255, .6) 20px, rgba(255, 255, 255,1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, .6) calc(100% - 20px), rgba(255, 255, 255, .6) 100%), url(background.jpg);
   background-size: cover;
   font-family: sans-serif;
