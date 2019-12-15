@@ -26,6 +26,9 @@ a {
   color: var(--main-color);
   text-decoration: none;
 }
+h2 {
+  color: darkgray;
+}
 
 #animation {
   display: flex;
@@ -47,15 +50,14 @@ a {
 ul li {
   list-style: none;
   vertical-align: middle;
-  /* line-height: 24px; */
 }
 ul li .material-icons {
   font-size: 24px;
-  /* margin-bottom: -6px; */
   vertical-align: sub;
   margin: 4px;
+  color: darkgray;
 }
 footer {
   font-size: 12px;
-  /* align-self: flex-end; */
+  color: darkgray;
 }
