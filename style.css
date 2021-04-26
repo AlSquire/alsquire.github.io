@@ -54,6 +54,11 @@ h2 {
   margin: 0;
   text-align: center;
 }
+h3 {
+  color: var(--main-color);
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+}
 
 #animation {
   flex-grow: 1;
